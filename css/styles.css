@@ -33,8 +33,12 @@ h4 {
 }
 
 .footer {
-  background-color: var(--secondary);
-  color: var(--primary);
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+main.container {
+  padding-top: 2rem;
 }
 
 .nav-link {
@@ -116,4 +120,18 @@ ul li {
   border-radius: 50%;
   margin-right: 0.5rem;
 }
+
+.brand-button {
+  margin-left: 0.5rem;
+}
+
+.gallery-img {
+  object-position: center;
+}
+
+iframe {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 
