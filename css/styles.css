@@ -1,42 +1,67 @@
 :root {
   --primary: #80B0C2;     /* Cool Blue */
-  --secondary: #274A00;   /* Deep Green */
+  --secondary: #274a0089;   /* Deep Green */
   --accent: #E43563;      /* Rose Pink */
   --highlight: #A6FFBC;   /* Minty Aqua */
   --text: #000000;        /* True Black */
-  --background: #80b0c250;  /* Clean white or swap for #f9f9f9 */
+--background: rgba(128, 176, 194, 0.3); /* semi-transparent Cool Blue */
 }
 
 body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
   background-color: var(--background);
-  color: var(--dark);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1, h2 {
+h1, h2, .accent-text {
+  font-family: 'Caveat Brush', cursive;
   color: var(--accent);
 }
 
 h4 {
+  font-family: 'Nunito', sans-serif;
   color: var(--primary);
 }
 
-.header {
+.navbar {
   background-color: var(--secondary);
+}
+
+.navbar-brand span {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 1.5rem;
 }
 
 .footer {
   background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.nav-link {
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: var(--accent);
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-link.active {
+  background-color: var(--accent);
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .navbar-brand img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 0.5rem;
@@ -70,7 +95,25 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
+.brand-button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.brand-button:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.brand-button img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
